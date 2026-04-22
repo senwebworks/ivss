@@ -217,22 +217,22 @@ function submitFinal() {
 
     // Gather all data
     const data = {
-        Immobilientyp: document.getElementById('property_type')?.value || 'Nicht angegeben',
-        Zeitrahmen: document.querySelector('input[name="timeframe"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
-        Wohnflaeche: document.querySelector('input[name="size"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
-        Nutzung: document.querySelector('input[name="usage"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
-        PreisFokus: getMatrixLabel('c1'),
-        ProvisionFokus: getMatrixLabel('c2'),
-        SchnelligkeitFokus: getMatrixLabel('c3'),
-        MarketingFokus: getMatrixLabel('c4'),
-        Adresse: document.getElementById('loc_adresse').value,
-        Zusatz: document.getElementById('loc_zusatz').value,
-        PLZ: document.getElementById('loc_plz').value,
-        Ort: document.getElementById('loc_ort').value,
-        Vorname: vorname,
-        Nachname: nachname,
-        Telefon: telefon,
-        Email: email
+        "Welche Art von Immobilie möchten Sie verkaufen?": document.getElementById('property_type')?.value || 'Nicht angegeben',
+        "Wie schnell möchten Sie verkaufen?": document.querySelector('input[name="timeframe"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
+        "Wie ist die Wohnfläche der Immobilie?": document.querySelector('input[name="size"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
+        "Wie wird die Immobilie aktuell genutzt?": document.querySelector('input[name="usage"]:checked')?.nextElementSibling?.textContent || 'Nicht angegeben',
+        "Was ist Ihnen beim Makler am wichtigsten? - Fokus auf den höchst möglichen Verkaufspreis": getMatrixLabel('c1'),
+        "Was ist Ihnen beim Makler am wichtigsten? - Faire Provision": getMatrixLabel('c2'),
+        "Was ist Ihnen beim Makler am wichtigsten? - Schnelligkeit des Verkaufs": getMatrixLabel('c3'),
+        "Was ist Ihnen beim Makler am wichtigsten? - Extravagantes Marketing (3D, Drohne, etc.)": getMatrixLabel('c4'),
+        "Wo befindet sich Ihre Immobilie? - Adresse": document.getElementById('loc_adresse').value,
+        "Wo befindet sich Ihre Immobilie? - Wohnungsnummer, Suite (Optional)": document.getElementById('loc_zusatz').value,
+        "Wo befindet sich Ihre Immobilie? - Postleitzahl": document.getElementById('loc_plz').value,
+        "Wo befindet sich Ihre Immobilie? - Stadt": document.getElementById('loc_ort').value,
+        "Kontaktdaten - Vorname": vorname,
+        "Kontaktdaten - Nachname": nachname,
+        "Kontaktdaten - Telefon": telefon,
+        "Kontaktdaten - E-Mail": email
     };
 
     // Send data to FormSubmit
